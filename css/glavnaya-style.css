@@ -1,0 +1,102 @@
+.navbar ul li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.navbar ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #111;
+}
+
+.navbar ul li a:hover {
+    color: brown;
+}
+
+
+.row {
+    margin-left: 10px;
+}
+
+.img {
+    margin-bottom: 5px;
+}
+
+.profile {
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.navbar-brand label {
+    font-size: 16px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+body{margin-top:20px;}
+.footer {
+    background-color: darkgrey;
+	padding-bottom: 20px;
+	padding-top: 40px;
+}
+.footer_menu {
+	margin-bottom: 20px;
+}
+.footer_menu ul {
+	list-style: none;
+	text-align: center;
+}
+.footer_menu ul li{display: inline-block;}
+.footer_menu ul li a {
+	color:#fff;
+	padding: 0 10px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer_menu ul li a:hover{color:#554c86;}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile{margin-bottom:40px;}
+.footer_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+
+.footer_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.footer_profile ul li{margin:2px;}
+}
+.footer_profile ul li a img{width:60px;}
+
+.footer_profile ul li a {
+    text-decoration: none;
+    display: block;
+    color: #111;
+}
+
+.footer_profile ul li a :hover {
+    color:#fff;
+}
+
+.footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}

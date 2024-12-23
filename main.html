@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/perviysemestr.css" rel="stylesheet">
+    
+ 
+    
+    <title>самый лучший сайт</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2 text-center">
+                    <img class="logo-picture" src="pic1.jpg" width="45px" height="45px">
+                </div>
+                <div class="col-7 text-center">
+                    <a href="glavnaya.html">Главная</a>
+                    <a href="perviysemestr.html">Первый семестр</a>
+                    <a href="#2sem">Второй семестр</a>
+                    <a href="main.html">Услуги</a>
+                    <a href="#reg">Авторизация</a>
+                </div>
+                <div class="col-3 mt-3">
+                    <p class="text">ЭФБО-04-23 <br />Горунов Арсений</p>
+                </div>
+            </div>
+        </div>  
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="label1">Разработка веб-приложений</h1>
+                </div>
+            <div class="row">
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то1</label></div>
+                    <div>
+                        <button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то1">Заказать</button>
+                    </div>                 
+                </div>
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то2</label></div>                
+                    <div><button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то2">Заказать</button></div>
+                </div>
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то3</label></div>
+                    <div><button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то3">Заказать</button></div>
+                </div>
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то4</label></div>
+                    <div>
+                        <button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то4">Заказать</button>
+                    </div>                 
+                </div>
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то5</label></div>                
+                    <div><button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то5">Заказать</button></div>
+                </div>
+                <div class="cards col-xl-4 col-md-6 col-xs-6">
+                    <img class="pic img-fluid" src="pic1.jpg"/>
+                    <div><label class="card-name">что-то6</label></div>
+                    <div><button type ="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-item="что-то6">Заказать</button></div>
+                </div>
+            </div>             
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Крутое окно</h1>
+            <button type="button" id="close-button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate>
+                    <div class="row g-7 align-items-center justify-content-center">
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Имя</label>
+                            <input type="text" class ="form-control" id="username" name="username" required placeholder="Ваше имя">         
+                        </div>
+                        <div class="col-12 mb-3">
+                                <label for="" class="form-label">Телефон</label>
+                                <input type="text" class ="form-control" id="phone" name="phone" required pattern ="[8]{1}[0-9]{10}" placeholder="8__________">
+                                <div class="invalid-feedback">Некорректный номер телефона</div>
+                        </div>
+                        <div class="col-12 mb-3">
+                                    <label for="" class="form-label">Почта</label>
+                                    <input type="email" class="form-control" name="email" id="email" required placeholder="abc@mail.com"/>
+                                    <div class="invalid-feedback">Некорректный адрес почты</div>     
+                        </div>
+                        <div class="col-12 mb-3">  
+                            <label for="" class="form-label">Выберите страну</label>    
+                            <div>
+                                <select class="form-select" aria-label="Default select example" id="country" name="country" required placeholder="Страна">
+                                    <option value="">Выберите страну</option>
+                                    <option value="ru">Россия</option>
+                                    <option value="us">Соединенные Штаты</option>
+                                    <option value="de">Германия</option>
+                                    <option value="fr">Франция</option>
+                                    <option value="cn">Китай</option>
+                                </select>
+                            </div>                                                                  
+                            <div class="error" id="country-error"></div>
+                        </div>
+                        <div class="col-12 mb-3"> 
+                            <label for="" class="form-label">Дата</label> 
+                            <div>
+                                <input type="date" id="date" name="date" required>
+                            </div>                                           
+                            <div class="error" id="date-error"></div>
+                        </div>
+                        <div class="col-12 mb-3">  
+                            <label for="" class="form-label">Комментарий</label>  
+                            <div>
+                                <textarea class="form-control" rows="5" id="comment" name="text" required placeholder="Комментарий"></textarea>
+                                <!--<textarea class="comment" id="comments" name="comments" rows="4" required placeholder="Комментарий"></textarea>--> 
+                            </div>                                  
+                            <div class="error" id="comments-error"></div>
+                        </div>
+                        <button type="submit" class="button-close-form btn btn-secondary">Закрыть</button>
+                    </div>
+                                    
+                </form>                
+            </div>
+        </div>
+        </div>
+    </div>
+
+       
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+
+</html>

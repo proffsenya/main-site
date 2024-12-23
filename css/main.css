@@ -1,0 +1,70 @@
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header a {
+    padding-right: 10px;
+}
+
+.text {
+    text-align: right;
+    padding-right: 10%;
+}
+
+.main {
+    padding-left: 20px;
+}
+
+.cards {
+    display: inline-block;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.pic {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 20%;
+}
+
+.label1 {
+    padding-bottom: 30px;
+}
+
+
+section button {
+    background-color: rgb(237, 237, 237);
+    width: 100px;
+    height: 40px;
+    border: 1px rgb(180, 180, 180) solid;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.card-name {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cards button:hover {
+    background-color: darkgray;
+}
+
+.button-close-form {
+    max-width: 50%
+}
